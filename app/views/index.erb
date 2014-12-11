@@ -1,0 +1,25 @@
+<div class="container">
+
+  <% if @user %>
+    Logged in as: <a href="/user/<%= @user.id %>"><%= @user.email %></a>
+    <form action="/logout", method="get">
+      <input type="submit" name="submit" value="Logout" />
+    </form>
+
+     <% else %>
+    <form action="/signin", method="get">
+
+      <input type="submit" name="submit" value="Sign In" />
+    </form>
+  <% end %>
+
+
+</div>
+
+<div id="slides">
+    <% @uploads.each do |upload| %>
+      <img class="eachphoto" src="<%= upload.file %>" />
+    <% end %>
+</div>
+
+

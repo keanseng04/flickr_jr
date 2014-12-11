@@ -1,0 +1,23 @@
+<div class="container">
+
+  <% if session[:user_id] == @user.id %>
+
+  <h2> Create a new album </h2>
+
+    <form action="/user/<%= @user.id %>/new_album" method="post">
+      <input type="name" placeholder="album name" name="name" />
+      <input type="description" placeholder="album description" name="description" />
+      <input type="submit" name="submit" value="Create Album" />
+    </form>
+
+    <% end %>
+
+    <table>
+      <% @user.albums.each do |a| %>
+      <tr>
+        <td><a href="/user/<%= @user.id %>/album/<%=a.id%>"><%=a.name%></a></td>
+      </tr>
+      <%end%>
+    </table>
+
+</div>

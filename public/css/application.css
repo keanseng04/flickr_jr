@@ -1,0 +1,53 @@
+.container {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: white;
+  font-family: serif;
+}
+
+th {
+  text-align: center;
+}
+
+.header {
+  background-color: #4573D5;
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  font-family: serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.links {
+  margin: 10px;
+}
+
+.photos {
+  text-align: center;
+}
+
+.eachphoto {
+  margin-top: 20px;
+}
+
+.photoby {
+  text-align: center;
+  font-family: serif;
+
+}
+
+.uploads {
+  font-family: serif;
+}
+
+/*#break {
+  clear: both;
+}*/
+
+ #slides {
+      display:none;
+    }

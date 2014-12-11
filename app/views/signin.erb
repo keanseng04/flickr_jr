@@ -1,0 +1,30 @@
+<div class="container">
+  <table>
+    <h1>Lickr</h1>
+
+    <% if @message %>
+    <h2 style=color:red><%= @message %></h2>
+    </br><% end %>
+
+    <tr>
+      <td><form action="/signin" method = "post">
+          <input type="text" placeholder="email" name="user[email]">
+          <input type="password" placeholder="password" name="user[password]" >
+          <p><input type="submit" value="SIGN IN"></td></p>
+        </form></td>
+    </tr>
+
+  </table>
+
+  <table>
+
+    <tr>
+      <td><form action="/signup" method = "post">
+          <input type="text" placeholder="email" name="user[email]">
+          <input type="password" placeholder="password" name="user[password]" >
+          <p><input type="submit" value="SIGN UP!"></td></p>
+        </form></td>
+    </tr>
+
+  </table>
+</div>
